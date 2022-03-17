@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,4 +23,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {
+}

@@ -1,10 +1,131 @@
+<script src="https://kit.fontawesome.com/1bea2dbc7d.js" crossorigin="anonymous"></script>
 <mat-toolbar class="header mat-elevation-z4">
-    <span>
-        <h1 id="tituloDP4">DP4-PR</h1>
-    </span>
-    <nav class="cantoSuperiorDireito">
-        <i class="material-icons">
-            
-        </i>
+    <nav>
+        <ul class="cantoSuperiorDireito">
+            <li id="notificacoes">
+                <i class="far fa-bell"></i>
+            </li>
+            <li id="NAOSEI">
+                <i class="fas fa-random"></i>
+            </li>
+            <li id="configuracoes">
+                <i class="fas fa-cog"></i>
+            </li>
+            <li id="sair">
+                <a href="voltaAPagina"><i class="fas fa-sign-out-alt">sair</i></a>
+                <!-- voltaAPaginaParaAcessar -->
+            </li>
+        </ul>
     </nav>
+    <!-- <nav class="menu">
+        <span expandir>
+            <div class="menu-toggle">
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </span>
+        <ul class="expansaoDoBotao">
+            <h1>DP4-PR</h1>
+            <p id="nome">USUARIO </p>
+            <p id="tituloMenu">MENU</p>
+            <ul>
+                <li>
+                    <span expandir>
+                        <i class="fas fa-shopping-cart"></i>
+                        <a href='menu/Pedidos.html'>Pedidos</a>
+                        <i id= "setas" class="fas fa-chevron-left"></i>
+                    </span>
+                </li>
+                <li>
+                    <span expandir>
+                        <i class="fas fa-palette"></i>
+                        <a href='menu/Acordos.html'>Acordos</a>
+                        <i id= "setas" class="fas fa-chevron-left"></i>
+                    </span>
+                </li>
+                <li>
+                    <span expandir>
+                        <i class="fas fa-users"></i>
+                        <a href='menu/Clientes.html'>Clientes</a>
+                        <i id="setas" class="fas fa-chevron-left"></i>
+                    </span>
+                </li>
+                <li>
+                    <span expandir>
+                        <i class="fas fa-suitcase"></i>
+                        <a href='menu/Representantes.html'>Representantes</a>
+                        <i id= "setas" class="fas fa-chevron-left"></i>
+                    </span>
+                </li>
+                <li>
+                    <span expandir>
+                        <i class="fas fa-check"></i>
+                        <a href='menu/Acerto Mensal.html'>Acerto Mensal</a>
+                        <i id= "setas" class="fas fa-chevron-left"></i>
+                    </span>
+                </li>
+                <li>
+                    <span expandir>
+                        <i class="far fa-edit"></i>
+                        <a href='menu/Aprovacao de Pedidos.html'>Aprovação de Pedidos</a>
+                        <i id= "setas" class="fas fa-chevron-left"></i>
+                    </span>
+                </li>
+                <li>
+                    <span expandir>
+                        <i class="fas fa-book"></i>
+                        <a href='menu/Relatorios.html'>Relatórios</a>
+                        <i id="setas" class="fas fa-chevron-left"></i>
+                    </span>
+                </li>
+                <li>
+                    <span expandir>
+                        <i class="fas fa-tags"></i>
+                        <a href='menu/Catalagos.html'>Catálagos</a>
+                        <i id="setas" class="fas fa-chevron-left"></i>
+                    </span>
+                </li>
+                <li>
+                    <span expandir>
+                        <i class="fas fa-clipboard-list"></i>
+                        <a href='menu/Plano de Metas.html'>Plano de Metas</a>
+                        <i id="setas" class="fas fa-chevron-left"></i>
+                    </span>
+                </li>
+                <li>
+                    <span expandir>
+                        <i class="fas fa-user"></i>
+                        <a href='menu/Eventos.html'>Eventos</a>
+                        <i id="setas" class="fas fa-chevron-left"></i>
+                    </span>
+                </li>
+                <li>
+                    <span expandir>
+                        <i class="fas fa-graduation-cap"></i>
+                        <a href='menu/Colaboradores.html'>Colaboradores</a>
+                        <i id="setas" class="fas fa-chevron-left"></i>
+                    </span>
+                </li>
+                <li>
+                    <span expandir>
+                        <i class="fas fa-globe-americas"></i>
+                        <a href='menu/Clube Mais DP4.html'>ClubeMais DP4</a>
+                        <i id= "setas" class="fas fa-chevron-left"></i>
+                    </span>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+    <script>
+        document.querySelectorAll('[expandir]').forEach(folder => {
+            folder.onclick = function (e) {
+                const proximoElemento = folder.nextElementSibling;
+                const visibilidadeDoProximoElemento = proximoElemento.style.display;
+                proximoElemento.style.display = visibilidadeDoProximoElemento === 'none' ? 'block' : 'none'
+            }
+        }) 
+    </script> -->
 </mat-toolbar>
