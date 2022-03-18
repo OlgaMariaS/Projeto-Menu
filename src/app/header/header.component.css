@@ -4,16 +4,14 @@
     background-color: #358eb8;
     color: #fff;
 }
-#tituloDP4 {
-    display: flex;
-    align-items: center;
-    max-height: 32px;
-    background-color: #3080a6;
-    color: #fff;
-}
 .cantoSuperiorDireito {
+    display: flex;
+    justify-content: space-around;   
     float: right;
+    width: 10rem;
 }
-.cantoSuperiorDireito ul {
-    list-style: none;
+.cantoSuperiorDireito a, i{
+    color: #fff;
+    /* letter-spacing: 20px; adicionaria espaço entre os elemento de 20px*/
+    cursor: pointer;
 }
