@@ -1,0 +1,36 @@
+h1{
+    font-weight: bold;
+    background-color: #307fa5;
+    padding: 16px;
+    border: 0;
+    text-align: center;
+}
+#tituloMenu {
+    background-color: #1e2629;
+    padding: 10px;
+    color: #4b646f;
+}
+#usuario{
+    font-weight: bold;
+    padding: 10px;
+}
+h1, #usuario, #tituloMenu {
+    margin: 0%;
+}
+.sidenav  {
+    background-color: #212d32;
+    color: #fff;
+    width: 15rem;
+    height: 100rem; /*verificar tamanho na tela e que seja dinamico*/
+}
+.sidenav a {
+    color: #FFF;
+    font-size: 1em;
+    padding: 0;
+}
+.sidenav i {
+    padding-right: 10px;
+}
+/* .sidenav > a > .setas{
+    padding-left: 100px;
+} setas alinhadas a direita */
