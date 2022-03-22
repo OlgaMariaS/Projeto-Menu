@@ -1,16 +1,32 @@
 <mat-toolbar class="header mat-elevation-z4">
     <nav class="cantoSuperiorDireito">
         <span>
-            <i class="far fa-bell"></i>
+            <mat-icon 
+            [matMenuTriggerFor]="notificacao" 
+            matBadge="1"
+            matBadgeColor="warn"> 
+            notifications_none
+            </mat-icon>
+            <mat-menu #notificacao="matMenu">
+            <button mat-menu-item></button>
+            </mat-menu>
         </span>
         <span>
-            <i class="fas fa-random"></i>
+            <mat-icon [matMenuTriggerFor]="seta">shuffle</mat-icon>
+            <mat-menu #seta="matMenu">
+            <button mat-menu-item></button>
+            </mat-menu>
         </span>
         <span>
-            <i class="fas fa-cog"></i>
+            <mat-icon [matMenuTriggerFor]="configuracoes">settings</mat-icon>
+            <mat-menu #configuracoes="matMenu">
+            <button mat-menu-item></button>
+            </mat-menu>
         </span>
         <span>
-            <a href="voltaAPagina"><i class="fas fa-sign-out-alt"></i></a>
+            <a href="voltaAPagina">
+                <mat-icon>logout</mat-icon>
+            </a>
         </span>
     </nav>
 </mat-toolbar>

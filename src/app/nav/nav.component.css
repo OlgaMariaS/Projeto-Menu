@@ -4,6 +4,7 @@ h1{
     padding: 16px;
     border: 0;
     text-align: center;
+    
 }
 #tituloMenu {
     background-color: #1e2629;
@@ -34,3 +35,6 @@ h1, #usuario, #tituloMenu {
 /* .sidenav > a > .setas{
     padding-left: 100px;
 } setas alinhadas a direita */
+.menutogle{
+    float: right;
+}

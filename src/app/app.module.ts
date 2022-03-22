@@ -7,10 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatBadgeModule} from '@angular/material/badge';
+
 import { NavComponent } from './nav/nav.component';
 
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
+
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -26,6 +31,9 @@ import {MatListModule} from '@angular/material/list';
     MatToolbarModule,
     MatListModule,
     MatSidenavModule,
+    MatMenuModule,
+    MatBadgeModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

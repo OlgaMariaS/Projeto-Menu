@@ -5,13 +5,15 @@
     color: #fff;
 }
 .cantoSuperiorDireito {
-    float: right;
     display: flex;
     width: 100%;
     justify-content: flex-end;  
 }
-.cantoSuperiorDireito a, i{
+mat-icon{
     color: #fff;
-    letter-spacing: 20px; /*adiciona espaço entre os elemento de 20px */
+    letter-spacing: 20px; /*adiciona espaço entre os elemento */
     cursor: pointer;
+}
+button {
+    text-decoration: none;
 }
