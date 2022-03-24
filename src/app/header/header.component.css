@@ -9,7 +9,7 @@
     width: 100%;
     justify-content: flex-end;  
 }
-mat-icon{
+i, a{
     color: #fff;
     letter-spacing: 20px; /*adiciona espaço entre os elemento */
     cursor: pointer;

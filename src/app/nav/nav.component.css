@@ -3,8 +3,7 @@ h1{
     background-color: #307fa5;
     padding: 16px;
     border: 0;
-    text-align: center;
-    
+    text-align: center;  
 }
 #tituloMenu {
     background-color: #1e2629;
@@ -20,21 +19,23 @@ h1, #usuario, #tituloMenu {
 }
 .sidenav  {
     background-color: #212d32;
+    width: 15.5rem;
+
+}
+.opcoesDoMenu {
+    max-height: 2rem;
+    font-size: 0.8rem;
+}
+.setasADireita{
     color: #fff;
-    width: 15rem;
-    height: 100rem; /*verificar tamanho na tela e que seja dinamico*/
+    /* margin-left:5rem; */
+    opacity: 0.5;
+    position: absolute;
+    right: 1rem;
 }
-.sidenav a {
-    color: #FFF;
-    font-size: 1em;
-    padding: 0;
+.opcoesDoMenu, .setasADireita, .sidenav {
+    color: #fff;
 }
-.sidenav i {
-    padding-right: 10px;
-}
-/* .sidenav > a > .setas{
-    padding-left: 100px;
-} setas alinhadas a direita */
 .menutogle{
     float: right;
 }
