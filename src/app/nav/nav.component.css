@@ -1,9 +1,18 @@
+.menu{
+    font-family:arial;
+}
+.menutogle{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
 h1{
     font-weight: bold;
     background-color: #307fa5;
     padding: 16px;
-    border: 0;
-    text-align: center;  
+    text-align: center; 
+
 }
 #tituloMenu {
     background-color: #1e2629;
@@ -35,7 +44,4 @@ h1, #usuario, #tituloMenu {
 }
 .opcoesDoMenu, .setasADireita, .sidenav {
     color: #fff;
-}
-.menutogle{
-    float: right;
 }

@@ -1,10 +1,16 @@
 <mat-sidenav-container class="menu">
-    <mat-sidenav #menuHamburguerSidenav class="sidenav" opened fixedInViewport="true">
-        <i (click)="menuHamburguerSidenav.toggle()" class="fas fa-bars menutogle"></i>
+    <mat-sidenav-content>
+        <!-- BOTÃO TOGGLE MINIMIZA/MAXIMIZA MENU-->
+        <i (click)="menuSidenav.toggle()" class="fas fa-bars menutogle"></i>
+      </mat-sidenav-content>
+    <mat-sidenav #menuSidenav class="sidenav" mode="side" opened fixedInViewport="true">
+        <!-- MENU LATERAL  -->
         <h1>DP4-PR</h1>
+        <p id="usuario">OLGA MARIA </p> 
+        <!-- NOME DO USUARIO -->
+        <p id="tituloMenu">Menu</p>
         <mat-nav-list class="nav-list">
-            <p id="usuario">OLGA MARIA </p>
-            <p id="tituloMenu">Menu</p>
+        <!-- INICIO DAS OPÇÕES DO MENU -->
             <mat-list-item class="opcoesDoMenu">
                 <mat-icon mat-list-icon>shopping_cart</mat-icon>
                 Pedidos
@@ -67,5 +73,6 @@
             </mat-list-item>           
         </mat-nav-list>
     </mat-sidenav>
+  
 </mat-sidenav-container>
 
