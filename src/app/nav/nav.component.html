@@ -1,8 +1,39 @@
 <mat-sidenav-container class="menu">
-    <mat-sidenav-content>
-        <!-- BOTÃO TOGGLE MINIMIZA/MAXIMIZA MENU-->
+
+    <mat-toolbar class="header mat-elevation-z4">
         <i (click)="menuSidenav.toggle()" class="fas fa-bars menutogle"></i>
-      </mat-sidenav-content>
+        <nav class="cantoSuperiorDireito">
+            <span>
+                <i 
+                [matBadge]="qtdNotificacao"
+                matBadgeColor="warn"
+                matBadgePosition="before" matBadgeOverlap="true"
+                [matMenuTriggerFor]="notificacao" 
+                class="far fa-bell"></i> 
+                <mat-menu #notificacao="matMenu">
+                <button mat-menu-item></button>
+                </mat-menu>
+            </span>
+            <span>
+                <i [matMenuTriggerFor]="seta" class="fas fa-random"></i> 
+                <mat-menu #seta="matMenu">
+                <button mat-menu-item></button>
+                </mat-menu>
+            </span>
+            <span>
+                <i [matMenuTriggerFor]="configuracoes" class="fas fa-cog"></i>
+                <mat-menu #configuracoes="matMenu">
+                <button mat-menu-item></button>
+                </mat-menu>
+            </span>
+            <span>
+                <a href="voltaAPagina">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </span>
+        </nav>
+    </mat-toolbar>
+
     <mat-sidenav #menuSidenav class="sidenav" mode="side" opened fixedInViewport="true">
         <!-- MENU LATERAL  -->
         <h1>DP4-PR</h1>

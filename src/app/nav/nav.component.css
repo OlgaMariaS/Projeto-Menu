@@ -6,11 +6,12 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    cursor:pointer;
 }
 h1{
     font-weight: bold;
     background-color: #307fa5;
-    padding: 16px;
+    padding: 1rem;
     text-align: center; 
 
 }
@@ -44,4 +45,24 @@ h1, #usuario, #tituloMenu {
 }
 .opcoesDoMenu, .setasADireita, .sidenav {
     color: #fff;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #358eb8;
+    color: #fff;
+}
+.cantoSuperiorDireito {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;  
+}
+i, a{
+    color: #fff;
+    letter-spacing: 20px; /*adiciona espaço entre os elemento */
+    cursor: pointer;
+}
+button {
+    text-decoration: none;
 }

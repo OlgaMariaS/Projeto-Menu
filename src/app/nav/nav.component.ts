@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-
+  qtdNotificacao: number = 0;
   constructor() { }
-
+  
   ngOnInit(): void {
+    this.qtdNotificacao=11;
   }
-
 }
