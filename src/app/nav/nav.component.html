@@ -1,9 +1,11 @@
 <mat-sidenav-container class="menu">
-
+    <!-- CABEÇALHO -->
     <mat-toolbar class="header mat-elevation-z4">
         <i (click)="menuSidenav.toggle()" class="fas fa-bars menutogle"></i>
+        <!-- NAVEGAÇÃO HORIZONTAL DO CANTO DIREITO -->
         <nav class="cantoSuperiorDireito">
             <span>
+                <!-- NOTIFICAÇÕES -->
                 <i 
                 [matBadge]="qtdNotificacao"
                 matBadgeColor="warn"
@@ -14,20 +16,23 @@
                 <button mat-menu-item></button>
                 </mat-menu>
             </span>
+            <!-- SINCRONIZAÇÃO -->
             <span>
                 <i [matMenuTriggerFor]="seta" class="fas fa-random"></i> 
                 <mat-menu #seta="matMenu">
                 <button mat-menu-item></button>
                 </mat-menu>
             </span>
+            <!-- CONFIGURAÇÕES -->
             <span>
                 <i [matMenuTriggerFor]="configuracoes" class="fas fa-cog"></i>
                 <mat-menu #configuracoes="matMenu">
                 <button mat-menu-item></button>
                 </mat-menu>
             </span>
+            <!-- BOTÃO SAIR -->
             <span>
-                <a href="voltaAPagina">
+                <a href="https://www.dp4.com.br/login/">
                     <i class="fas fa-sign-out-alt"></i>
                 </a>
             </span>
